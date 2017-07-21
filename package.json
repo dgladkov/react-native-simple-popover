@@ -1,0 +1,36 @@
+{
+  "name": "react-native-simple-popover",
+  "version": "1.0.0",
+  "description": "Simple dynamic popovers for React Native",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dmitry Gladkov <dmitry.gladkov@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "dependencies": {
+    "prop-types": "*",
+    "uuid": "^3.1.0"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgladkov/react-native-simple-popover.git"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "react-native-simple-popover",
+    "popover"
+  ],
+  "bugs": {
+    "url": "https://github.com/dgladkov/react-native-simple-popover/issues"
+  },
+  "homepage": "https://github.com/dgladkov/react-native-simple-popover#readme"
+}
