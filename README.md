@@ -25,7 +25,7 @@ by this component and render above the children.
 * `padding` (*Number*): Pads component area to constrain your popovers.
 * `children` (*ReactElements*): Component tree that you want your popovers to render in.
 
-### `<Popover text isVisible arrowWidth arrowHeight placement containerStyle textStyle>`
+### `<Popover component isVisible arrowColor arrowWidth arrowHeight placement>`
 
 Renders component with defined properties around the wrapped component.
 
