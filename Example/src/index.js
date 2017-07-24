@@ -67,10 +67,11 @@ const styles = StyleSheet.create({
   buttons: {
     position: 'absolute',
     flexDirection: 'row',
-    flex: 1,
+    width: '100%',
     top: 0,
     left: 0,
     marginTop: 20,
+    justifyContent: 'space-around',
   },
   popoverContainer: {
     backgroundColor: '#114B5F',
