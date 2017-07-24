@@ -1,6 +1,6 @@
 {
   "name": "react-native-simple-popover",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple dynamic popovers for React Native",
   "main": "index.js",
   "scripts": {
