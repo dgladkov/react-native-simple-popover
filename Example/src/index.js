@@ -21,12 +21,18 @@ export default class App extends Component {
         <View style={styles.container}>
           <Popover
             placement={this.state.popoverPlacement}
+            arrowColor="#114B5F"
             arrowWidth={16}
             arrowHeight={8}
-            text="This is a very long popover text. Container padding affects max width and height of this popover."
             isVisible={this.state.isPopoverVisible}
-            containerStyle={styles.popoverContainer}
-            textStyle={styles.popoverText}
+            component={() => (
+              <View style={styles.popoverContainer}>
+                <Text style={styles.popoverText}>
+                  This is a very long popover text.
+                  Container padding affects max width and height of this popover.
+                </Text>
+              </View>
+            )}
           >
             <Text style={styles.welcome}>
               Welcome to React Native!

@@ -31,16 +31,15 @@ Renders component with defined properties around the wrapped component.
 
 #### Props
 
-* `text` (*String*): Popover text.
+* `component` (*Component*): Popover component to render.
 * `isVisible` (*Boolean*): Defines if popover is visible. Defaults to `true`.
+* `arrowColor` (*Color*): Popover's arrow color. Defaults to `white`.
 * `arrowWidth` (*Number*): Popover's arrow width. Defaults to `15`.
 * `arrowHeight` (*Number*): Popover's arrow height. Defaults to `10`.
 * `placement` (*'left' || 'right' || 'top' || 'bottom' || 'auto'*):
   Where popover should be placed related to the wrapped component. if `'auto'`,
   all placement options are tried and first suitable placement option is picked.
   Defaults to `'auto'`.
-* `containerStyle` (*[View Style](https://facebook.github.io/react-native/docs/view.html#style)*): Popover container style.
-* `textStyle` (*[Text Style](https://facebook.github.io/react-native/docs/text.html#style)*): Popover text style.
 * `children` (*ReactElement*): Component that you want your popover to point to.
 
 ## Example
@@ -72,13 +71,18 @@ class Example extends Component {
         <View style={styles.container}>
           <Popover
             placement={this.state.popoverPlacement}
+            arrowColor="#114B5F"
             arrowWidth={16}
             arrowHeight={8}
-            text={'This is a very long popover text. ' +
-                  'Container padding affects max width and height of this popover.'}
             isVisible={this.state.isPopoverVisible}
-            containerStyle={styles.popoverContainer}
-            textStyle={styles.popoverText}
+            component={() => (
+              <View style={styles.popoverContainer}>
+                <Text style={styles.popoverText}>
+                  This is a very long popover text.
+                  Container padding affects max width and height of this popover.
+                </Text>
+              </View>
+            )}
           >
             <Text style={styles.welcome}>
               Welcome to React Native!
