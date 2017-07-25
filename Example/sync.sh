@@ -7,7 +7,7 @@ fi
 
 rsync -r \
 --exclude .git/ \
---exclude Example/ \
 --exclude package-lock.json \
---exclude node_modules/ \
+--exclude .npmignore \
+--filter=':- .npmignore' \
 .. "$TARGET"
