@@ -22,8 +22,10 @@ by this component and render above the children.
 
 #### Props
 
-* `padding` (*Number*): Pads component area to constrain your popovers.
-* `children` (*ReactElements*): Component tree that you want your popovers to render in.
+| Prop          | Type           | Default    | Description                                                 |
+| ------------- | -------------- | ---------- | ----------------------------------------------------------- |
+| padding       | Number         | `0 `       | Pads component area to constrain your popovers.             |
+| children      | ReactElements  | `null`     | Component tree that you want your popovers to render in.    |
 
 ### `<Popover component isVisible arrowColor arrowWidth arrowHeight placement>`
 
@@ -31,16 +33,15 @@ Renders component with defined properties around the wrapped component.
 
 #### Props
 
-* `component` (*Component*): Popover component to render.
-* `isVisible` (*Boolean*): Defines if popover is visible. Defaults to `true`.
-* `arrowColor` (*Color*): Popover's arrow color. Defaults to `white`.
-* `arrowWidth` (*Number*): Popover's arrow width. Defaults to `15`.
-* `arrowHeight` (*Number*): Popover's arrow height. Defaults to `10`.
-* `placement` (*'left' || 'right' || 'top' || 'bottom' || 'auto'*):
-  Where popover should be placed related to the wrapped component. if `'auto'`,
-  all placement options are tried and first suitable placement option is picked.
-  Defaults to `'auto'`.
-* `children` (*ReactElement*): Component that you want your popover to point to.
+| Prop          | Type           | Default    | Description                                                 |
+| ------------- | -------------- | ---------- | ----------------------------------------------------------- |
+| component     | Component      | `0`        | Popover component to render.                                |
+| isVisible     | Boolean        | `true`     | Defines if popover is visible.                              |
+| arrowColor    | Color          | `'white'`  | Popover's arrow color.                                      |
+| arrowWidth    | Number         | `15`       | Popover's arrow width.                                      |
+| arrowHeight   | Number         | `10`       | Popover's arrow height.                                     |
+| placement     | String         | `'auto'`   | Where popover should be placed related to the wrapped component. If `'auto'`, all placement options are tried and first suitable placement option is picked. Supported placement options: `'left'`, `'right'`, `'top'`, `'bottom'`, `'auto'`.                                                         |
+| children      | ReactElement   | null       | Element that you want your popover to point to.             |
 
 ## Example
 
