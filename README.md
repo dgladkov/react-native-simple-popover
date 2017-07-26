@@ -41,7 +41,7 @@ Renders component with defined properties around the wrapped component.
 | arrowWidth    | Number         | `15`       | Popover's arrow width.                                      |
 | arrowHeight   | Number         | `10`       | Popover's arrow height.                                     |
 | placement     | String         | `'auto'`   | Where popover should be placed related to the wrapped component. If `'auto'`, all placement options are tried and first suitable placement option is picked. Supported placement options: `'left'`, `'right'`, `'top'`, `'bottom'`, `'auto'`.                                                         |
-| children      | ReactElement   | null       | Element that you want your popover to point to.             |
+| children      | ReactElement   | `null`       | Element that you want your popover to point to.           |
 
 ## Example
 
