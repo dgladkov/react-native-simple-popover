@@ -15,7 +15,7 @@ This package does not provide native modules and does not require linking and re
 
 ## API
 
-### `<PopoverContainer padding>`
+### `<PopoverContainer>`
 
 Provides ability for child `Popover` components to register and render inside this element. Child popovers are constrained
 by this component and render above the children.
@@ -27,7 +27,7 @@ by this component and render above the children.
 | padding       | Number         | `0 `       | Pads component area to constrain your popovers.             |
 | children      | ReactElements  | `null`     | Element   tree that you want your popovers to render in.    |
 
-### `<Popover component isVisible arrowColor arrowWidth arrowHeight placement>`
+### `<Popover>`
 
 Renders component with defined properties around the wrapped component.
 
