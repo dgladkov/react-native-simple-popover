@@ -25,7 +25,7 @@ by this component and render above the children.
 | Prop          | Type           | Default    | Description                                                 |
 | ------------- | -------------- | ---------- | ----------------------------------------------------------- |
 | padding       | Number         | `0 `       | Pads component area to constrain your popovers.             |
-| children      | ReactElements  | `null`     | Component tree that you want your popovers to render in.    |
+| children      | ReactElements  | `null`     | Element   tree that you want your popovers to render in.    |
 
 ### `<Popover component isVisible arrowColor arrowWidth arrowHeight placement>`
 
